@@ -1,17 +1,19 @@
 # Dashboard Design System
 
+[![CI](https://github.com/han-sen/design-system/actions/workflows/ci.yml/badge.svg)](https://github.com/han-sen/design-system/actions/workflows/ci.yml)
+
 A small component library designed for building dashboards.
 
 Built with React, TypeScript, Tailwind CSS v4, and class-variance-authority, documented and developed in Storybook. This is a work in progress: the generic components come first, then the dashboard-specific ones.
 
 ## Components
 
-| Component | Notes |
-| --- | --- |
-| `Button` | `primary`, `secondary`, `ghost`, `danger` variants, three sizes, loading state, ref forwarding |
-| `Tabs` | Compound component (`Tabs.List`, `Tabs.Trigger`, `Tabs.Content`) with `tablist`/`tab`/`tabpanel` roles and `aria-selected` |
-| `Badge` | Status variants for short labels |
-| `Alert` | Compound component (`Alert.Title`, `Alert.Description`), status icon per variant, `alert` vs `status` role by severity |
+| Component | Notes                                                                                                                      |
+| --------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `Button`  | `primary`, `secondary`, `ghost`, `danger` variants, three sizes, loading state, ref forwarding                             |
+| `Tabs`    | Compound component (`Tabs.List`, `Tabs.Trigger`, `Tabs.Content`) with `tablist`/`tab`/`tabpanel` roles and `aria-selected` |
+| `Badge`   | Status variants for short labels                                                                                           |
+| `Alert`   | Compound component (`Alert.Title`, `Alert.Description`), status icon per variant, `alert` vs `status` role by severity     |
 
 Planned: `Card`, `StatCard`, `Table`, `DescriptionList`, `Skeleton`/`EmptyState`, and two charts (`Sparkline`, `BarChart`) built on D3 scales and shapes rendered as React SVG.
 
